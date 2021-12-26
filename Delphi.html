@@ -23,6 +23,19 @@
 	padding-right: 10px;
 	}
 	
+	.column {
+		float: left;
+		width: 33.33%;
+		padding: 5px;
+	  }
+	  
+	  /* Clear floats after image containers */
+	  .row::after {
+		content: "";
+		clear: both;
+		display: table;
+	  }
+
 	</style>
 		<title>Shiva Soleimanyyyyy</title>
 		<meta charset="utf-8" />
@@ -37,13 +50,14 @@
 					<!-- Logo -->
 						<div id="logo">
 							<span class="image avatar48"><img src="ShivaSoleimany.github.io/images/Profile_Picture.JPG" alt="" /></span>
-							<h1 id="title">Shiva Soleimany</h1>
+							<!-- <h1 id="title">Shiva Soleimany</h1> -->
+							<h3> <a class='btn btn-link' id = 'title' href='index.html'>&nbsp;Shiva Soleimany</a>
 							<p>University of Alberta</p>
 						</div>
 						<nav id="nav">
 							<ul>
 								<li><a href="#top" id="top-link"><span class="icon fa-home">Home</span></a></li>
-								<li><a href="#education" id="education-link"><span class="icon fa fa-graduation-cap">Pilot</span></a></li>
+								<li><a href="#pilot" id="pilot-link"><span class="icon fa fa-graduation-cap">Pilot</span></a></li>
 								<li><a href="#work" id="work-link"><span class="icon fa fa-briefcase">Agent</span></a></li>
 								<li><a href="#projects" id="projects-link"><span class="icon fa fa-wrench">Compare</span></a></li>
 						</nav>
@@ -61,68 +75,21 @@
 
 			</div>
 <!--  ------------------------------------------------------------------------------------------------------------ -->
-		<!-- Main -->
-			<div id="main">
-				<!-- Intro -->
-					<section id="top" class="one dark cover">
-						<div class="container">
-						<header>
-						Hello! Welcome to my homepage! I am a first year Masters student at the University of Alberta.<br>
-						I got My BSc in Software Engineering from the University of Isfahan with an outstanding performance<br>
-						among my classmates for which I was awarded the honorary admission to MSc in AI. I have past<br>
-						experience in Computer Vision, Robotics, Data Mining and Natural Language Processing. Currently,<br>
-						my main interest is in the field of Reinforcement Learning and I am working in this area under<br>
-						the supervision of Professor Matthew Taylor in the RLAI lab.<br>
-						</header>
-						<footer>
-							<a id="mybtn" class="button scrolly" href="/images/CV.pdf" download><span id ="mybtn"> CV</a>
-						</footer>
-						</div>
-					</section>
-<!--  ------------------------------------------------------------------------------------------------------------ -->
 				<!-- Pilot -->
-					<section id="education" class="four" >
-					<div class="container" align="left">
-					<header class="major" style="border-bottom: solid #eeeeee 2px;">
-							<h2 style="padding: 0px; margin: 0px;"><i class="fa fa-graduation-cap"></i> Education</h2>
-							</header>
-							<div class="body" align="left">
-									<strong >        Msc in Computer Science</strong>
-									<div class="pull-right text-small">
-										2019 - 2021
-									</div>
-									<div class="text">
-										&emsp;University of Alberta, Edmonton, Alberta<br>
-										&emsp;<b>Thesis:</b> Effective Transfer Learning with the Use of Distance Metrics<br>
-										&emsp;<b>Supervisor:</b> Dr. Matthew Taylor <br>
-										&emsp;<b>GPA:</b> 3.9/4
-									</div>
-									<br>
-									<strong >        BSc in Computer Engineering (Software Engineering)</strong>
-										<div class="pull-right text-small">
-											2013 - 2017
-										</div>
-										<div class="text">
-											&emsp;University of Isfahan, Isfahan, Iran<br>
-											&emsp;<b>Thesis:</b> Facial Expression Recognition<br>
-											&emsp;<b>Adviser:</b> Dr. Amirhassan Monadjemi <br>
-											&emsp;<b>Last 60 credits GPA:</b> 18/20  = 3.83/4
-										</div>
-									<br>
-									<strong>Diploma in Mathematics and Physics</strong>
-									<div class="pull-right text-small">
-										2009 - 2013
-									</div>
-									<div class="text">
-										&emsp;Farzanegan Amin High School, Isfahan, Iran <br>
-										&emsp;<b>GPA:</b> 4/4
-									</div>
-							</div>
-					</div>
-            
-           <div class="container">
-             <iframe src="https://drive.google.com/file/d/1ARy6Ru_dP2bgUh8bLrJ5jyeW1mweyDFN/preview" width="640" height="480" allow="autoplay"></iframe>
-            </div>
+					<section id="pilot" class="four" >
+
+					<div class="row">
+						<div class="column">
+							<img src="Sort.png" alt="Snow" style="width:100%">
+						</div>
+						<div class="column">
+							<img src="Sort.png" alt="Forest" style="width:100%">
+						</div>
+						</div>
+
+						<div class="container">
+							<iframe src="https://drive.google.com/file/d/1ARy6Ru_dP2bgUh8bLrJ5jyeW1mweyDFN/preview" width="640" height="480" allow="autoplay"></iframe>
+						   </div>
 					</section>
   <!--------------- ------------------------- - - - ----------------------------------------->
   				<!-- Work Experience -->
