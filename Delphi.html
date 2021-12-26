@@ -30,12 +30,14 @@
 	  }
 	  
 	  /* Clear floats after image containers */
-	  .row::after {
+	.row::after {
 		content: "";
 		clear: both;
 		display: table;
 	  }
-
+	.imgContainer{
+		float:left;
+	}
 	</style>
 		<title>Shiva Soleimanyyyyy</title>
 		<meta charset="utf-8" />
@@ -95,6 +97,17 @@
 						</div>
 						</div>
 					<br>
+
+					<div class="image123">
+						<div class="imgContainer">
+							<img src="/images/Sort.png" height="200" width="200"/>
+							<p>This is image 1</p>
+						</div>
+						<div class="imgContainer">
+							<img class="middle-img" src="/images/Sort.png"/ height="200" width="200"/>
+							<p>This is image 2</p>
+						</div>
+					</div>
 
 
 					<strong >        video</strong>
