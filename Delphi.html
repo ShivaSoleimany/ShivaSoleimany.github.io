@@ -22,19 +22,6 @@
 	margin-right:10px;	
 	padding-right: 10px;
 	}
-	
-	.column {
-		float: left;
-		width: 33.33%;
-		padding: 5px;
-	  }
-	  
-	  /* Clear floats after image containers */
-	.row::after {
-		content: "";
-		clear: both;
-		display: table;
-	  }
 	.imgContainer{
 		float:left;
 	}
@@ -52,16 +39,22 @@
 					<!-- Logo -->
 						<div id="logo">
 							<span class="image avatar48"><img src="ShivaSoleimany.github.io/images/Profile_Picture.JPG" alt="" /></span>
-							<!-- <h1 id="title">Shiva Soleimany</h1> -->
-							<h3> <a class='btn btn-link' id = 'title' href='index.html'>&nbsp;Shiva Soleimany</a>
+							<h1 id="title">Shiva Soleimany</h1>
 							<p>University of Alberta</p>
 						</div>
 						<nav id="nav">
 							<ul>
-								<li><a href="#top" id="top-link"><span class="icon fa-home">Home</span></a></li>
-								<li><a href="#pilot" id="pilot-link"><span class="icon fa fa-graduation-cap">Pilot</span></a></li>
-								<li><a href="#agent" id="agent-link"><span class="icon fa fa-briefcase">Agent</span></a></li>
-								<li><a href="#compare" id="compare-link"><span class="icon fa fa-wrench">Compare</span></a></li>
+								<li><a href="#top" id="top-link"><span class="icon fa-home">Introduction</span></a></li>
+								<li><a href="#education" id="education-link"><span class="icon fa fa-graduation-cap">Education</span></a></li>
+								<li><a href="#work" id="work-link"><span class="icon fa fa-briefcase">Work</span></a></li>
+								<li><a href="#projects" id="projects-link"><span class="icon fa fa-wrench">Projects</span></a></li>
+								<li><a href="#research" id="research-link"><span class="icon fa fa-flask">Research</span></a></li>
+								<li><a href="#publication" id="publication-link"><span class="icon fa fa-file-pdf-o">Publications</span></a></li>
+								<li><a href="#teaching" id="teaching-link"><span class="icon fa fa-group">Teaching</span></a></li>
+								<li><a href="#honors" id="honors-link"><span class="icon fa fa-trophy">Honors</span></a></li>
+								<li><a href="#certificates" id="certificates-link"><span class="icon fa fa-vcard-o">Certificates</span></a></li>
+								<li><a href="#skills" id="skills-link"><span class="icon fa fa-code">Skills</span></a></li>
+							</ul>
 						</nav>
 				</div>
 
@@ -77,76 +70,658 @@
 
 			</div>
 <!--  ------------------------------------------------------------------------------------------------------------ -->
-<!-- Pilot -->
-<section id="pilot" class="four" >
-	<div class="container" align="left">
-	<header class="major" style="border-bottom: solid #eeeeee 2px;">
-	<h2 style="padding: 0px; margin: 0px;"><i class="fa fa-graduation-cap"></i> Education</h2>
-	</header>
-			<div class="body" align="left">
-					<strong >        charts</strong>
-					<div class="pull-right text-small">
-						2019 - 2021
-					</div>
-					<div class="row">
-						<div class="column">
-							<img src="images/Sort.png" alt="Snow" style="width:100%">
-						</div>
-						<div class="column">
-							<img src="images/Sort.png" alt="Forest" style="width:100%">
-						</div>
-						</div>
-					<br>
-
-					<div class="image123">
-						<div class="imgContainer">
-							<img src="/images/Sort.png" height="200" width="200"/>
-							<p>This is image 1</p>
-						</div>
-						<div class="imgContainer">
-							<img class="middle-img" src="/images/Sort.png"/ height="200" width="200"/>
-							<p>This is image 2</p>
-						</div>
-					</div>
-
-
-					<strong >        video</strong>
-						<div class="pull-right text-small">
-							2013 - 2017
-						</div>
+		<!-- Main -->
+			<div id="main">
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
 						<div class="container">
-							<iframe src="https://drive.google.com/file/d/1ARy6Ru_dP2bgUh8bLrJ5jyeW1mweyDFN/preview" width="640" height="480" allow="autoplay"></iframe>
-						   </div>
-
-
-			</div>
-	</div>
-	</section>
-
-				
-
-  <!--------------- ------------------------- - - - ----------------------------------------->
-  				<!-- Agent -->
-				  <section id="agent" class="four" >
-
-					<div class="row">
-						<div class="column">
-							<img src="images/Sort.png" alt="Snow" style="width:100%">
+						<header>
+						Hello! Welcome to my homepage! I am a first year Masters student at the University of Alberta.<br>
+						I got My BSc in Software Engineering from the University of Isfahan with an outstanding performance<br>
+						among my classmates for which I was awarded the honorary admission to MSc in AI. I have past<br>
+						experience in Computer Vision, Robotics, Data Mining and Natural Language Processing. Currently,<br>
+						my main interest is in the field of Reinforcement Learning and I am working in this area under<br>
+						the supervision of Professor Matthew Taylor in the RLAI lab.<br>
+						</header>
+						<footer>
+							<a id="mybtn" class="button scrolly" href="/images/CV.pdf" download><span id ="mybtn"> CV</a>
+						</footer>
 						</div>
-						<div class="column">
-							<img src="images/Sort.png" alt="Forest" style="width:100%">
-						</div>
-						</div>
+					</section>
+<!--  ------------------------------------------------------------------------------------------------------------ -->
+				<!-- Education -->
+					<section id="education" class="four" >
+					<div class="container" align="left">
+					<header class="major" style="border-bottom: solid #eeeeee 2px;">
+							<h2 style="padding: 0px; margin: 0px;"><i class="fa fa-graduation-cap"></i> Education</h2>
+							</header>
+							<div class="body" align="left">
+									<strong >        Msc in Computer Science</strong>
+									<div class="pull-right text-small">
+										2019 - 2021
+									</div>
+									<div class="text">
+										&emsp;University of Alberta, Edmonton, Alberta<br>
+										&emsp;<b>Thesis:</b> Effective Transfer Learning with the Use of Distance Metrics<br>
+										&emsp;<b>Supervisor:</b> Dr. Matthew Taylor <br>
+										&emsp;<b>GPA:</b> 3.9/4
+									</div>
 
-						<div class="container">
-							<iframe src="https://drive.google.com/file/d/1ARy6Ru_dP2bgUh8bLrJ5jyeW1mweyDFN/preview" width="640" height="480" allow="autoplay"></iframe>
-						   </div>
+									<div class="image123">
+										<div class="imgContainer">
+											<img src="/images/Sort.png" height="200" width="200"/>
+											<p>This is image 1</p>
+										</div>
+										<div class="imgContainer">
+											<img class="middle-img" src="/images/Sort.png"/ height="200" width="200"/>
+											<p>This is image 2</p>
+										</div>
+		
+									</div>
+
+
+									<br>
+									<strong >        BSc in Computer Engineering (Software Engineering)</strong>
+										<div class="pull-right text-small">
+											2013 - 2017
+										</div>
+										<div class="text">
+											<iframe src="https://drive.google.com/file/d/1ARy6Ru_dP2bgUh8bLrJ5jyeW1mweyDFN/preview" width="640" height="480" allow="autoplay"></iframe>
+										</div>
+									<br>
+									<strong>Diploma in Mathematics and Physics</strong>
+									<div class="pull-right text-small">
+										2009 - 2013
+									</div>
+									<div class="text">
+										&emsp;Farzanegan Amin High School, Isfahan, Iran <br>
+										&emsp;<b>GPA:</b> 4/4
+									</div>
+							</div>
+					</div>
 					</section>
   <!--------------- ------------------------- - - - ----------------------------------------->
+  				<!-- Work Experience -->
+				  <section id="work" class="four">
+					<div class="container" align="left">
+						<header class="major" style="border-bottom: solid #eeeeee 2px;">
+						<h2 style="padding: 0px; margin: 0px;"><i class="fa fa-briefcase"></i> Work Experience</h2>
+						</header>
 
-<!-- ------------------------------------------------------------------------------------------------------------- -->
 
+						<div class="pull-right" style="margin-right: 15px;">
+							<div class="text-small">Jan 2020-Jun 2021</div>
+						</div>
+						<br>
+						<!-- <div class="body"> -->
+							<div class="item">
+								<div class="row">
+									<div style="float:left;">
+										<strong>Reasrch Scientist Intern at Delphi Technology Corp, Calgary, Canada</strong>
+									</div>
+								</div>
+								<div class="text">
+								<ul class="circle">
+								<li>Fine-tuning the reward function and training an agent to perform straight and level and climb<br>
+									tasks in the X-plane flight simulator.<br></li>
+								<li>Analyzing (OCR,..) data of a real pilot’s flight, showing that the trained agent achieves<br>
+									comparable results to a pilot</li>
+								<li>Software developer</li>
+								<li>Technologies: Tensorflow, openAI-gym, OpenCV, Seaborn </li>
+								</ul>
+								</div>
+							</div>
+						<!-- </div> -->
+
+						<div class="pull-right" style="margin-right: 15px;">
+							<div class="text-small">Aug 2018-May 2018</div>
+						</div>
+						<br>
+						<div class="body">
+							<div class="item">
+								<div class="row">
+									<div style="float:left;">
+										<strong>Data Scientist at Sadra Eye Clinic, Isfahan, Iran</strong>
+									</div>
+								</div>
+								<div class="text">
+								<ul class="circle">
+								<li>Worked on data mining and predictive analysis for Retinopathy of Prematurity<br>
+									on a real world dataset of over 18000 records.<br></li>
+								<li>Using bagging methods(Random Forest) to tackle the problem of
+									small dataset size and achieving 84% accuracy.</li>
+								<li>Technologies: Matplotlib, scikit-learn</li>
+								</ul>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="pull-right" style="margin-right: 15px;">
+							<div class="text-small">2016-2017</div>
+						</div>
+						<br>
+						<div class="body">
+							<div class="item">
+								<div class="row">
+									<div style="float:left;">
+										<strong>Backend Developer at ITOrbit, Tehran, Iran</strong>
+									</div>
+								</div>
+								<div class="text">
+								<ul class="circle">
+								<li>Working with JAVAEE, C++ and MYSQL to develop an ERP(Enterprise resource planning)<br>
+								system named 'NAAD' for managing university students and professors information. NAAD was <br>
+								the most famous and only ERP in academia in Iran and is used in nearly 1 out of 4 universities<br>
+								across the country.<br></li>
+								<li>Database developer</li>
+								<li>Software developer</li>
+								<li>Writing a program to clean, compress & encrypt text files to increase security </li>
+								<li>Working with TortoiseSVN and helping the IT support team to migrate from it to Git. </li>
+								<li>Working with WampServer and Making refreshing a single page possible in it in order<br> to fasten developing process.</li>
+								</ul>
+								</div>
+							</div>
+						</div>
+
+
+
+					 </div>
+				</section>  
 <!-- ------------------------------------------------------------------------------------------------------------- -->
+			<!-- Projects -->
+			<section id="projects" class="four">
+				<div class="container" align="left">
+					<header class="major" style="border-bottom: solid #eeeeee 2px;">
+						<h2 style="padding: 0px; margin: 0px;"><i class="fa fa-wrench"></i> Projects</h2>
+					</header>
+
+					<div class="row">
+						<div class="col-4 col-12-mobile">
+							
+							<article class="item">
+								<a href="http://18.218.112.128:8501/" class="image fit"><img src="images/Sort.png" alt="" /></a>
+								<header>							
+									<h3> <a class='btn btn-link' href='http://18.218.112.128:8501/'>&nbsp;Sorting Visualization:</a>
+									<font size="-1"> Visualizing the sorting process of three sort algorithms in a simple project in order to experiment with matplotlib animation, Streamlit and AWS EC2 servers.</font></h3>
+								</header>
+							</article>
+							
+							<article class="item">
+								<a href="Delphi.html" class="image fit"><img src="images/Sort.png" alt="" /></a>
+								<header>							
+									<h3> <a class='btn btn-link' href='Delphi.html'>&nbsp;Sorting Visualization:</a>
+									<font size="-1"> Visualizing the sorting process of three sort algorithms in a simple project in order to experiment with matplotlib animation, Streamlit and AWS EC2 servers.</font></h3>
+								</header>
+							</article>
+							<article class="item">
+								<a href="https://github.com/softlabg1/Deep-Learning/blob/master/Email%20network%20analysis.ipynb" class="image fit"><img src="images/new.png" alt="" /></a>
+								<header>							
+									<h3> <a class='btn btn-link' href='https://github.com/softlabg1/Deep-Learning/blob/master/Email%20network%20analysis.ipynb'>&nbsp;Email Network Analysis:</a>
+									<font size="-1">Analyzing the &nbsp;internal email communication network between &nbsp;employees of a company(strongly connected &nbsp;components, centers, diameter, radius, etc)</font></h3>
+								</header>
+							</article>
+							
+							
+
+							
+							
+							<article class="item">
+								<a href="#" class="image fit"><img src="images/road.png" alt="" /></a>
+								<header>
+									<h3> &nbsp; Path Construction Planning:
+									<font size="-1">A Python &nbsp;program to determine between which cities a new &nbsp;road should be constructed.</font></h3>
+									</header>
+							</article>	
+
+
+							<article class="item">
+								<a href="#" class="image fit"><img src="images/country.png" alt="" /></a>
+								<header>
+								<h3> Country Prediction
+								<font size="-1">: A program in LISP  that asks about the primary attributes like its continent, Colors included in its flag, etc of a
+								country and tells the name of the country.</font> </h3>
+								</header>
+							</article>
+						
+							<article class="item">
+								<a href="#" class="image fit"><img src="images/sudoku.png" alt="" /></a>
+								<header>
+								<h3>Sudoku Solver
+								<font size="-1">: Solving 4x4 and 9x9 Sudoku using AI algorithms such as backtracking.</font> </h3>
+								</header>
+							</article>
+							
+						</div>
+<!------------------------------------------------------------------------------------------------------>
+						<div class="col-4 col-12-mobile">
+							<article class="item">
+								<a href="https://github.com/softlabg1/Deep-Learning/blob/master/Facial%20Expression%20Recognition.ipynb" class="image fit"><img src="images/face.png" alt="" /></a>
+								<header>
+									<h3> <a class='btn btn-link' href="https://github.com/softlabg1/Deep-Learning/blob/master/Facial%20Expression%20Recognition.ipynb">&nbsp;Facial Experiences Recognition:</a>
+									<font size="-1">: Determining which of happiness, sadness, disgust/anger, fear/surprise feeling the person in an image is experiencing.</font></h3>
+								</header>
+							</article>
+							
+							<article class="item">
+								<a href="#" class="image fit"><img src="images/emoji.png" alt="" /></a>
+								<header>
+									<h3>&nbsp;Emojifier:
+									<font size="-1">Adding Emojis to text messages can &nbsp;make them more expressive and the goal of this &nbsp;project is to add appropriate emojis to text messages automatically.</font></h3>
+								</header>
+							</article>
+							<article class="item">
+								<a href="#" class="image fit"><img src="images/depression.png" alt="" /></a>
+								<header>
+									<h3>Depression Measurement
+									<font size="-1">: A program in LISP that can tell the user whether
+									 he is suffering from depression or not and if he is by how much.
+									If the program recognizes that the user is very depressed it will give further advice.</font></h3>
+								</header>
+							</article>
+
+							
+						</div>
+<!------------------------------------------------------------------------------------------------------>
+						<div class="col-4 col-12-mobile">
+							<article class="item">
+								<a href="http://htmlpreview.github.com/?https://github.com/ShivaSoleimany/ShivaSoleimany.github.io/blob/master/projects/forest.html" class="image fit"><img src="images/fctp.png" alt="" /></a>
+								<header><h3>Forest Cover Type Prediction: 
+								<font size="-1">: A data mining classification problem. The goal of this project was to train 
+								a classifier that is able to classify(predict) the forest 
+								cover types for areas which were not included in its training data.</font>
+								</h3>
+								
+								</header>
+							</article>
+							
+							
+							<article class="item">
+								<a href="#" class="image fit"><img src="images/network.png" alt="" /></a>
+								<header>
+									<h3>Failed Servers Detection
+									<font size="-1">: Using Gaussian distribution for anomaly detection
+									in order to detect servers with unnatural behaviors in a network.</font></h3>
+								</header>
+							</article>
+							
+							
+							<article class="item">
+								<a href="#" class="image fit"><img src="images/ant.png" alt="" /></a>
+								<header>
+									<h3>
+									Artificial Ant with GP:<font size="-1">I wrote the code for solving this problem and visualized the
+									of finding the best path. You can see its video on the project's page.</font></h3>
+								</header>
+							</article>
+							
+							
+							<article class="item">
+								<a href="#" class="image fit"><img src="images/od.png" alt="" /></a>
+								<header>
+									<div class="text">
+									<h3>
+									Car detection with YOLO <font size="-1">: A program with Keras and Tensorflow and the powerful YOLO model for detecting cars. Car detection can have applications in areas such as Autonomous driving.</font>
+									</h3>
+									</div>
+									</header>
+							</article>
+							
+						</div>
+					</div>
+
+				</div>
+			</section>
+<!-- ---------------------------------------------------------------------------------------------------------->
+
+ 				<!-- Research -->
+					<section id="research" class="four">
+						<div class="container" align="left">
+						 <div class="elem">
+							<header class="major" style="border-bottom: solid #eeeeee 2px;">
+								<h2 style="padding: 0px; margin: 0px;"><i class="fa fa-flask"></i> Research Experiences</h2>
+							</header>
+							<br>
+							<div class="body">
+
+
+								<div class="item">
+									<div class="row">
+										<div style="float:left;">
+											<strong>Research Assistant, University of Alberta</strong>
+											<li>Supervisor: Prof. MAtthew Taylor </li>
+
+										</div>
+									</div>
+									<br>
+									<div class="text">
+									<ul class="circle">
+									<li>Working on improving transfer learning (regarding final performance, jumpstart, time to threshold)<br>
+										with the use of distance metrics (action distance, next-state distance, reward distance) <br>
+										in OpenAIgym environments: PEndulum and Hopper.<br>
+									<div class="pull-right" style="margin-right: 15px;">
+										<div class="text-small">2020 – Present</div>
+									</div>
+									</li>
+
+									<br>
+
+									<li>Creating new source tasks for transfer learning based on the distance metrics and comparing them.<br>
+									</li>
+									<br>
+									</ul>
+									</div>
+								</div>
+								<!-------------------------------------------- -->
+								<div class="item">
+									<div class="row">
+										<div style="float:left;">
+											<strong>Research Assistant, University of Isfahan</strong>
+											Supervisor: Prof. AmirHassan Monadjemi
+										</div>
+									</div>
+									<br>
+									<div class="text">
+									<ul class="circle">
+									<li>Working on video action recognition (using spatial & temporal stream CNNs)
+									<div class="pull-right" style="margin-right: 15px;">
+										<div class="text-small">2017 – Present</div>
+									</div>
+									</li>
+
+									<br>
+
+									<li>Working on data mining and predictive analysis for Retinopathy of Prematurity <br>
+									(a type of eye disease) on a dataset of over 18000 records
+									<div class="pull-right" style="margin-right: 15px;">
+										<div class="text-small">2017 – Present</div>
+									</div>
+									</li>
+
+									<br>
+									<li>Working on autonomous robot movement with video analysis
+									<div class="pull-right" style="margin-right: 15px;">
+                        				<div class="text-small">2015</div>
+                    				</div>
+									</li>
+									</ul>
+									</div>
+								</div>
+
+
+
+
+
+
+							</div>
+						 </div>
+						</div>
+					</section>  
+<!--  ------------------------------------------------------------------------------------------------------------ -->
+				<!-- Publications -->
+					<section id="publication" class="four">
+						<div class="container" align="left">
+						 <div class="elem">
+							<header class="major" style="border-bottom: solid #eeeeee 2px;">
+							<h2 style="padding: 0px; margin: 0px;"><i class="fa fa-file-pdf-o"></i> Publications</h2>
+							</header>
+							<br>
+							<div class="body">
+								<div class="item"  align="left">
+								<ul>
+									<li><strong >Machine Learning and the Use of Classifier Algorithms in Identification and Classification <br>
+									of the Risk for Retinopathy of Prematurity in Premature Infnats </strong>
+												<div class="pull-right text-small">2018</div></li>
+										<div class="text">
+											Gh.Naderian,Shiva Soleimany,[and 5 others]<br>
+										</div>
+									</ul>
+								</div>
+								<br>
+								<div class="item"  align="left">
+								<ul>
+									<li><strong><a href="http://www.davidpublisher.com/index.php/Home/Article/index?id=37716.html"> A Note on the Euclidean Algorithm</a></strong>
+									<div class="pull-right text-small">2018</div></li>
+									<div class="text">
+										Shiva Soleimany, K.Bagheri <br>
+										Published in the Journal of Mathematics and System Science 8 (2018) 175-6<br>
+									</div>
+									</ul>
+								</div>
+								
+								<div class="item"  align="left">
+								<ul>
+									<li><strong><a href="https://arxiv.org/abs/1808.04975">A Note on Acyclic Matchings in Abelian Groups</a></strong>
+									<div class="pull-right text-small">2018</div></li>
+									<div class="text">
+										M.Aliabadi, Shiva Soleimany <br>
+										Submitted to the Journal of Combinatorial Mathematics and Combinatorial Computing<br>
+									</div>
+								</ul>
+								</div>
+							</div>
+						</div>
+						</div>
+					</section>
+<!-- ------------------------------------------------------------------------------------------------------------- -->
+				<!-- Teaching Experience -->
+					<section id="teaching" class="four">
+						<div class="container" align="left">
+						 <div class="elem">
+							<header class="major" style="border-bottom: solid #eeeeee 2px;">
+								<h2 style="padding: 0px; margin: 0px;"><i class="icon fa fa-group"></i> Teaching Experiences</h2>
+							</header>
+							<br>
+							<div class="body">
+								<div class="item">
+									<div class="row">
+										<div style="float:left;">
+											<strong>Teaching Assistant, University of Alberta</strong>
+										</div>
+									</div>
+									<div class="text">
+									<ul class="circle">
+										<li>Algorithms I
+											<div class="pull-right" style="margin-right: 15px;"><div class="text-small">Fall 2019-Winter 2020</div></div>
+										</li>
+										<li>Algorithms II
+											<div class="pull-right" style="margin-right: 15px;"><div class="text-small">Fall 2020</div></div>
+										</li>
+										<li>Introduction to Computing
+											<div class="pull-right" style="margin-right: 15px;"><div class="text-small">Winter 2021</div></div>
+										</li>
+									</ul>
+									</div>
+								</div>
+								<!---------------------------------------------------------->
+								<div class="item">
+									<div class="row">
+										<div style="float:left;">
+											<strong>Teaching Assistant, University of Isfahan</strong>
+										</div>
+									</div>
+									<div class="text">
+									<ul class="circle">
+										<li>Data Mining
+											<div class="pull-right" style="margin-right: 15px;"><div class="text-small">2016</div></div>
+										</li>
+										<li>Data Structures 
+											<div class="pull-right" style="margin-right: 15px;"><div class="text-small">2013</div></div>
+										</li>
+										<li>Advanced Programming(JAVA)
+											<div class="pull-right" style="margin-right: 15px;"><div class="text-small">2015</div></div>
+										</li>
+										<li>Technical English  
+											<div class="pull-right" style="margin-right: 15px;"><div class="text-small">2017</div></div>
+										</li>
+									</ul>
+									</div>
+								</div>
+								<!---------------------------------------------------------->
+								<div class="body" align="left">
+									<strong >Instructor, Farzanegan High School (NODET)</strong>
+										<div class="pull-right text-small">
+											2015-2017
+										</div>
+									<ul class="circle">
+										<li>Mathematics(Algebra, Combinatorics, Geometric Analysis)</li>
+										<li>Programming (HTML, C++)</li>
+										<li>Mechanical Physics and Astronomy</li>
+									</ul>
+								</div>
+								<!---------------------------------------------------------->
+								<div class="body" align="left">
+									<strong >English Instructor, Iran Language Institute (ILI)</strong>
+										<div class="pull-right text-small">
+											2014-2016
+										</div>
+									<ul class="circle">
+										<li>Teaching English as a Second Language (ESL) to Teenagers.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						</div>
+					</section>  
+<!-- ------------------------------------------------------------------------------------------------------------- -->
+				<!-- Honors and Awards -->
+					<section id="honors" class="four">
+						<div class="container" align="left">
+							<header class="major" style="border-bottom: solid #eeeeee 2px;">
+							<h2 style="padding: 0px; margin: 0px;"><i class="fa fa-trophy"></i> Honors and Awards</h2>
+							</header>
+							<br>
+							<div class="body">
+								<ul class="text"  align="left">
+									<li>Received <strong>honorary admission</strong> from University of Isfahan graduate
+									studies in <br>Artificial Intelligence for outstanding academic success, Iran
+										<div class="pull-right text-small">2017</div></li>
+										
+									<li><strong >Top 10 percent during Bachelor studies </strong>
+										<div class="pull-right text-small">2017</div></li>
+										
+									<li><strong >First team in the ACM contest held at the University of Isfahan </strong>
+										<div class="pull-right text-small">2016</div></li>
+										
+									<li><strong >Third place in Isfahan Startup Weekend, Isfahan,Iran </strong>
+										<div class="pull-right text-small">2015</div></li>	
+										
+									<li><strong >Ranked top 0.007 in the Nationwide University Entrance Exam among all<br>
+									students in mathematics and physics (approximately 570,000) </strong>
+										<div class="pull-right text-small">2013</div></li>
+										
+									<li><strong ><a href="https://arxiv.org/abs/1808.04975"> Second place,IranOpen RoboCup Competitions, Junior Soccer Leauge</a></strong>
+										<div class="pull-right text-small">2012</div></li>
+										
+									<li><strong ><a href="https://pasteboard.co/HBtrFGv.jpg">Second place,IranOpen RoboCup Competitions, Junior Soccer Leauge</a></strong>
+										<div class="pull-right text-small">2011</div></li>	
+										
+									<li><strong >Participating in the International Robotic competitions, Istanbul, Turkey</strong>
+										<div class="pull-right text-small">2011</div></li>
+										
+									<li><strong >Participated in AUTCUP RoboCup Competitions, Line Follower League</strong>
+										<div class="pull-right text-small">2010</div></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+<!-- ------------------------------------------------------------------------------------------------------------- -->
+				<!-- Certificates -->
+					<section id="certificates" class="four">
+						<div class="container" align="left">
+							<header class="major" style="border-bottom: solid #eeeeee 2px;">
+							<h2 style="padding: 0px; margin: 0px;"><i class="fa fa-vcard-o"></i> Certificates</h2>
+							</header>
+							<br>
+							<div class="body">
+							<ul>
+								<li style="margin: 10px 0px;"><a href="https://www.coursera.org/account/accomplishments/certificate/F32FQHUMWRDM">Machine Learning by the Stanford University on Coursera</a></li>
+								<li style="margin: 10px 0px;"><a href="https://courses.edx.org/certificates/d46068099d7b48859446ab92ba434ec8">Machine Learning for Data Science and Analytics by ColumbiaX on edX</a></li>
+								<li style="margin: 10px 0px;"><a href="https://www.coursera.org/account/accomplishments/certificate/WHYDZC9NXNF3"> Introduction to Graph Theory by the University of California San Diego on Coursera</a></li>
+								<li style="margin: 10px 0px;"><a href="https://www.coursera.org/account/accomplishments/certificate/Y2NY78H7EH4A">Neural Networks and Deep Learning by Deeplearning.ai on Coursera</a></li>
+								<li style="margin: 10px 0px;"><a href="https://www.coursera.org/account/accomplishments/certificate/DVZ79U7PZLGT">Sequence Models by Deeplearning.ai on Coursera</a></li>
+								<li style="margin: 10px 0px;"><a href="https://www.coursera.org/account/accomplishments/certificate/R45TCFMCUQJ4">Convolutional Neural Networks by Deeplearning.ai on Coursera</a></li>
+								
+							</ul>
+							</div>
+						</div>
+					</section>
+<!-- ------------------------------------------------------------------------------------------------------------- -->
+				<!-- Technical Skills -->
+					<section id="skills" class="four">
+						<div class="container" align="left">
+						<div class="body">
+						<div class="elem">
+						<header class="major" style="border-bottom: solid #eeeeee 2px;">
+							<h2 style="padding: 0px; margin: 0px;"><i class="fa fa-code"></i> Technical Skills</h2>
+						</header>
+							<ul>
+								<li style="margin: 10px 0px;">Programming Languages
+									<span class="skillwraper">Java</span>
+									<span class="skillwraper">Python</span>
+									<span class="skillwraper">PHP</span>
+									<span class="skillwraper">Prolog</span>
+									<span class="skillwraper">C++</span>
+									<span class="skillwraper">R</span>
+								</li>
+
+								<li style="margin: 10px 0px;">Web Technologies
+                					<span class="skillwraper">HTML</span>
+									<span class="skillwraper">CSS</span>
+									<span class="skillwraper">JavaScript</span>
+									<span class="skillwraper">JQuery</span>
+                					<span class="skillwraper">XML</span>
+                					<span class="skillwraper">Json</span>
+								</li>
+
+            					<li style="margin: 10px 0px;">Database systems
+                					<span class="skillwraper">Microsoft SQL Server</span>
+                					<span class="skillwraper">MySQL</span>
+                					<span class="skillwraper">SQLite</span>
+            					</li>
+
+            					<li style="margin: 10px 0px;">Libraries
+									<span class="skillwraper">TensorFlow</span>
+                					<span class="skillwraper">Keras</span>
+                					<span class="skillwraper">Scikit-learn</span>
+									<span class="skillwraper">NetworkX,</span>
+            					</li>
+
+            					<li style="margin: 10px 0px;">Software
+               					 <span class="skillwraper">RapidMiner</span>
+                					<span class="skillwraper">NetBeans</span>
+                					<span class="skillwraper">Eclipse</span>
+                					<span class="skillwraper">IntelliJ</span>
+                					<span class="skillwraper">Visual Paradigm</span>
+                					<span class="skillwraper">MATLAB</span>
+                					<span class="skillwraper">AltiumDesigner</span>
+                					<span class="skillwraper">Proteus</span>
+                					<span class="skillwraper">Visual Studio</span>
+            					</li>
+
+            					<li style="margin: 10px 0px;">Microprocessor
+                					<span class="skillwraper">AVR</span>
+                					<span class="skillwraper">ARM</span>
+            					</li>
+
+            					<li style="margin: 10px 0px;">Operating System
+                					<span class="skillwraper">Windows</span>
+                					<span class="skillwraper">Linux</span>
+            					</li>
+
+            					<li style="margin: 10px 0px;">TypeSetting
+                					<span class="skillwraper">Microsoft Word</span>
+                					<span class="skillwraper">LATEX</span>
+            					</li>
+        					</ul>
+    					</div>
+						</div>
+						</div>
+					</section>
+<!-- ------------------------------------------------------------------------------------------------------------- -->
+					
+			</div>
+
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
