@@ -2257,6 +2257,11 @@ input, select, textarea {
 				background-color: #e8edec;
 			}
 
+			#main > section.delphi {
+				background-color: #81918E;
+				background-image: url("../../images/airplane.jpeg");
+			}
+
 /* Wide */
 
 	@media screen and (min-width: 961px) and (max-width: 1880px) {
