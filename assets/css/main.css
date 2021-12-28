@@ -2331,7 +2331,7 @@ input, select, textarea {
 		/* Item */
 
 			.item {
-				margin-bottom: 20px;
+				margin-bottom: 24px;
 			}
 
 		/* Header */
@@ -2405,6 +2405,7 @@ input, select, textarea {
 
 			.item {
 				margin-bottom: 15px;
+				margin-left: 15px;
 			}
 
 		/* Icons */
