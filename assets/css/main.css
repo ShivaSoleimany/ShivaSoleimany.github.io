@@ -2269,7 +2269,7 @@ input, select, textarea {
 
 			#main > section.delphi {
 				background-color: #81918E;
-				background-image: url("../../images/airplane.jpeg");
+				/* background-image: url("../../images/airplane.jpeg"); */
 			}
 
 /* Wide */
