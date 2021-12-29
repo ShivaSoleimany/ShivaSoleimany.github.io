@@ -229,6 +229,7 @@ input, select, textarea {
 		text-align: left;
 		font-size: 0.8em;
 		color: #2c2828;
+		background-color: #e8edec;
 	}
 	.container {
 		margin: 0 auto;
