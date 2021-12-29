@@ -221,7 +221,13 @@ input, select, textarea {
 
 /* Container */
 
-
+	.container1 {
+		
+		margin: 0 auto;
+		max-width: 100%;
+		width: 1400px;
+		text-align: left;
+	}
 	.container {
 		margin: 0 auto;
 		max-width: 100%;
