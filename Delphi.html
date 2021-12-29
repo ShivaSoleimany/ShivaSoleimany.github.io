@@ -86,7 +86,14 @@
 						using ML to identify mistakes or sub-optimal maneuvers of trainee pilots inside a flight simulator <a href="https://www.x-plane.com/">(Xplane)</a>,
 						with the goal of reducing human trainer supervision while improving student learning outcomes. To learn
 						how to fly, trainees at DTC are currently guided through exercises in a flight simulator by a human flying
-						instructor. We posit that training a predictive/RL-enabled system to take on some tasks is a viable approach to reduce the workload of an instructor and allow them to interact with more students simultaneously. In the first step, an RL agent has been trained with SAC algorithm to perform the most important task in flying an airplane, straight and level. 
+						instructor. We posit that training a predictive/RL-enabled system to take on some tasks is a viable approach to reduce the workload of an instructor and allow them to interact with more students simultaneously. 
+						In the first step, an RL agent has been trained with SAC algorithm to perform the most important task in flying an airplane, straight and level. 
+						Pitch, yaw and roll of the airplane are used to measure the success of the agent. These variables are shown in the below figure.
+						<img src="/images/pitch.png" alt="Snow" style="width:100%">
+						A simplified version of the final reward function based on these values is mentioned below: 
+						
+						In the following sections we demonstrate two graphs and a video for each agent and a real pilot. The first graph shows the distribution of the states that agent/pilot have been in during the fight time. PR means the airplane is within the range of the goal pitch and goal roll. And pry means it’s in within the range of all the values. The second graph depicts the reward that agent’pilot gets based on our reward function mentioned earlier. Last but not least, a video shows the performamceof agent and pilot. In order to better show that our agent reaches comparable results with the pilot, the corresponding results for agent and pilot are shown side by side in the comparison section.
+						
 						<br><br>
 					</header>
 					</div>
