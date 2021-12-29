@@ -1774,8 +1774,8 @@ input, select, textarea {
 		}
 
 		.image.avatar48 {
-			width: 65px;
-			height: 65px;
+			width: 48px;
+			height: 48px;
 			/*background: #f00;*/
 		}
 
@@ -2252,7 +2252,8 @@ input, select, textarea {
 			}
 
 			#main > section.one {
-				background-color: #81918E;
+				/* background-color: #81918E; */
+				background-color: #e8edec;
 				background-image: url("../../images/banner.jpg");
 			}
 
@@ -2269,10 +2270,8 @@ input, select, textarea {
 			}
 
 			#main > section.delphi {
+				/* background-color: #81918E; */
 				background-color: #e8edec;
-				font-size: 0.6em;
-				color: #2c2828;
-
 				/* background-image: url("../../images/airplane.jpeg"); */
 			}
 
