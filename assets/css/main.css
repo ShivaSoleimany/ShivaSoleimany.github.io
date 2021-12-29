@@ -227,7 +227,7 @@ input, select, textarea {
 		max-width: 100%;
 		width: 1400px;
 		text-align: left;
-		font-size: 0.8em;
+		/* font-size: 0.8em; */
 		color: #2c2828;
 		background-color: #e8edec;
 	}
