@@ -80,6 +80,7 @@ input, select, textarea {
 	appearance: none;
 }
 
+
 /* Basic */
 
 	html {
@@ -219,6 +220,7 @@ input, select, textarea {
 	}
 
 /* Container */
+
 
 	.container {
 		margin: 0 auto;
