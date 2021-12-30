@@ -34,6 +34,10 @@
 		clear: both;
 		display: table;
 	  }
+
+	  table, th, td {
+		border:1px solid black;
+	  }
 	</style>
 		<title>Shiva Soleimanyyyyy</title>
 		<meta charset="utf-8" />
@@ -94,6 +98,36 @@
 						<header>
 						A simplified version of the final reward function based on these values is mentioned below: 
 						
+
+
+						<!DOCTYPE html>
+
+
+<h2>A basic HTML table</h2>
+
+<table style="width:100%">
+  <tr>
+	<td>Yaw reward</td>
+    <td>Pitch reward</td>
+    <td>Roll reward</td>
+    
+  </tr>
+  <tr>
+    <td>if 'Y'</td>
+    <td>if 'YP'</td>
+    <td>if 'YPR'</td>
+  </tr>
+  <tr>
+    <td>1 - (Yaw_error)<sup>0.4</sup>   </td>
+    <td>1 - (pitch_error)<sup>0.4</sup></td>
+    <td>1 - (roll_error)<sup>0.4</sup></td>
+  </tr>
+</table>
+
+
+
+
+
 						In the following sections we demonstrate two graphs and a video for each agent and a real pilot. The first graph shows the distribution of the states that agent/pilot have been in during the fight time. PR means the airplane is within the range of the goal pitch and goal roll. And pry means it’s in within the range of all the values. The second graph depicts the reward that agent’pilot gets based on our reward function mentioned earlier. Last but not least, a video shows the performamceof agent and pilot. In order to better show that our agent reaches comparable results with the pilot, the corresponding results for agent and pilot are shown side by side in the comparison section.
 						
 						<br><br>
