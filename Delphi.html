@@ -144,6 +144,8 @@
 										<div class="coltt"><img src="images/agent_states.png" alt="Snow" style="width:100%" style="height:98%"></div>
 										<div class="coltt"><img src="images/Agent_reward.JPEG" alt="Mountain" style="width:100%" style="height:100%"></div>
 									  </div><br>
+
+
 									  Below is a recorded video from the trained agent performing the straight and level task. The reward for each timestep is shown on the video in time. This reward is based on the same reward function used for training the agent and is calculated by reading the pitch, roll and heading of the airplane using OCR.<br>
 										<div class="video">
 											<iframe src="https://drive.google.com/file/d/1Pg8JR7gZaMK63bdkICaVuUsFPI21Ht_0/preview" width="640" height="480" allow="autoplay"></iframe>
@@ -196,6 +198,15 @@
 									<div class="coltt"><img src="/images/compare1.png" alt="Snow" style="width:100%"></div>
 									<div class="coltt"><img src="/images/compare2.jpg" alt="Mountain" style="width:100%"></div>
 								</div><br>
+								<div class="text">
+								Since the agent is specifically trained based on the reward function while the pilot might include several other parameters in his/her dicision makings, the agent reaches a 
+								higher reward based on our reward function. This alone however cannot be an indication for better performance of the agent compared to pilot. Additionally, 
+								we were not aiming to perform better than the pilot, if possible. Our goal was to train an agent that takes similar decisions to the pilot in the same situtions. Therefore, the below 
+								figure can better show that our agent can guides students during training similar to a pilot. It shows that over the training time, the difference 
+								between the actions that the agent and pilot take in similar states decreases. 
+							</div>
+								  <img src="/images/pilot_agent.png" width="350" height="300" class="center">
+
 
 								  <div class="rrtt">
 
