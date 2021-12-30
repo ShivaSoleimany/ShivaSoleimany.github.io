@@ -2107,8 +2107,8 @@ input, select, textarea {
 
 	#logo {
 		position: relative;
-		margin: 3em 2.75em 2.75em 2.75em;
-		min-height: 48px;
+		margin: 1em 0.75em 0.75em 0.75em;
+		min-height: 65px;
 		cursor: default;
 	}
 
