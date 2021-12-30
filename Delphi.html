@@ -98,8 +98,9 @@
 						Defining a good reward function that can capture the essence of a task is crucial in training an RL agent that can properly perform that task. For flying straight and level, the pitch and roll of the airplane should be nearly zero and the yaw is defined based on the point towards which the airplane is flying. For our task, yaw is 180 degrees. The agent can receive a reward for being within a reasonable range (10 degrees) from these goal values. The reward increases as the agent gets closer to the exact desired values. Throughout the flight, the state of the agent is represented using the first letter of each measurement: P, Y, and R. If the agent is within range of the desired pitch (zero), but not within range of perfect Roll and yaw values, the agent’s state is represented as ‘P’. If the agent's state is ‘PRY’ it means that the agent is within range for all the measurements. A simplified version of the final reward function based on these values is mentioned below:
 					</header>
 
-					<h2>Reward Function</h2>
-
+					<h3>Reward Function</h3>
+					<strong style="font-size:8vw" >rr</strong>
+					<strong style="font-size:2vw" >r</strong>
 					<table style="width:100%">
 					<tr>
 						<td>Yaw_reward</td>
