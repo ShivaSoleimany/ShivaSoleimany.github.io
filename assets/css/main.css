@@ -228,7 +228,8 @@ input, select, textarea {
 		width: 1400px;
 		text-align: left;
 		/* font-size: 0.8em; */
-		color: #2c2828;
+		/* color: #2c2828; */
+		color: #888;
 		background-color: #e8edec;
 	}
 	.container {
