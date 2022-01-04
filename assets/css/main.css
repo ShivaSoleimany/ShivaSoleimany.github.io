@@ -2012,13 +2012,15 @@ input, select, textarea {
 
 		.item header {
 			background: #fff;
-			margin: 0;
+			margin: 1;
 			padding: 1em 0 1em 0;
 			font-size: 0.8em;
 		}
 
 			.item header h3 {
 				font-size: 1em;
+				padding: 1em 0 1em 0;
+				margin: 1;
 			}
 
 /* Icons */
