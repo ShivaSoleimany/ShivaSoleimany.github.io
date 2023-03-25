@@ -86,55 +86,13 @@
 					<div class="container1">
 
 					<!-- <strong style="font-size:3vw" >Introduction</strong> -->
-					<h2 style="padding: 0px; margin: 0px;"><i class="fa fa-chevron-right"></i>   Introduction</h2>
-
-					<header>
+					<h2 style="padding: 0px; margin: 0px;"><i class="fa fa-chevron-right"></i>  Monthly Sales Across the Company Plotted with Tableau</h2>
 
 
-                        https://public.tableau.com/app/profile/shiva8019/viz/Book1_16781494061070/Sheet1?publish=yes
                         
                         <div class='tableauPlaceholder' id='viz1678149953318' style='position: relative'><noscript><a href='#'><img alt='Sheet 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book1_16781494061070&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Book1_16781494061070&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book1_16781494061070&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1678149953318');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
                         
 
-                        <a href="https://www.studyflight.com/straight-and-level-flight/">chart</a>
-
-
-						This project was in the partnership of the University of Alberta (UofA) and Delphi Technology Corp (DTC), an innovative ﬂight training solution provider with offices in Winnipeg and Calgary. The ultimate goal of this research is to decrease the needed help from pilots during the training procedure of new pilots. This objective, once reached, will have a positive impact on the entire Canadian aviation industry. Research along this direction will also help in significantly lowering the cost of the pilot training program by reducing the number of additional flight instructors required to produce the required numbers of new pilots. Additionally, this technology can potentially be used in several related tutoring tasks. <br>
- 						The first phase of this project will focus on using ML to identify mistakes or sub-optimal maneuvers of trainee pilots inside a flight simulator <a href="https://www.x-plane.com/">(Xplane)</a>,to reduce human trainer supervision while improving student learning outcomes. To learn how to fly, trainees at DTC are currently guided through exercises in a flight simulator by a human flying instructor. We posit that training a predictive/RL-enabled system to take on some tasks is a viable approach to reduce the workload of an instructor and allow them to interact with more students simultaneously. 
-						 In the first step, an RL agent is trained with SAC (Soft Actor-Critic) algorithm to perform the most important task in flying an airplane, flying . Pitch, yaw, and roll of the airplane are used to measure the success of the agent in performing this task. These variables are shown in the below figure.
-					</header>
-						<img src="/images/pitch.png" alt="Snow" width="350" height="300" class="center">
-					<header>
-						Defining a good reward function that can capture the essence of a task is crucial in training an RL agent that can properly perform that task. For flying straight and level, the pitch and roll of the airplane should be nearly zero and the yaw is defined based on the point towards which the airplane is flying. For our task, yaw is 180 degrees. The agent can receive a reward for being within a reasonable range (10 degrees) from these goal values. The reward increases as the agent gets closer to the exact desired values. Throughout the flight, the state of the agent is represented using the first letter of each measurement: P, Y, and R. If the agent is within range of the desired pitch (zero), but not within range of perfect Roll and yaw values, the agent’s state is represented as ‘P’. If the agent's state is ‘PRY’ it means that the agent is within range for all the measurements. A simplified version of the final reward function based on these values is mentioned below:
-					</header>
-
-
-					<strong style="font-size:1.5vw" >Reward Function</strong><br><br>
-
-					<table style="width:100%">
-						Reward = Yaw_reward + Pitch_reward + Roll_reward <br>
-					<tr>
-						<td>Yaw_reward</td>
-						<td>if 'Y'</td>
-						<td>1 - (yaw_error)<sup>0.4</sup>   </td>
-					</tr>
-					<tr>
-						<td>Pitch_reward</td>
-						<td>if 'YP'</td>
-						<td>1 - (pitch_error)<sup>0.4</sup></td>
-					</tr>
-					<tr>
-						<td>Roll_reward</td>
-						<td>if 'YPR'</td>
-						<td>1 - (roll_error)<sup>0.4</sup></td>
-					</tr>
-					
-					</table>
-					<header>
-					After training the agent, the performance of the agent is compared against the performance of a pilot. Some of the results from this comparison are mentioned in the <a href="#compare">Compare</a> section. After ensuring that the agent is performing comparably to a pilot, the agent can be used as a guideline for students during their trainings and showing them warnings, or calculating a score for them based on how similar to the trained agent they acted. It can also be used for prompting and teaching them the correct moves and decisions. This phase is still ongoing at DTC.
-					In the following sections, we demonstrate the state distribution, reward and a video for pilot and agent. In order to better show that our agent reaches comparable results with the pilot, the corresponding results for agent and pilot are shown side by side in the <a href="#compare">Compare</a> section.
-					</header>
-						<br><br>
 					</div>
 				</section>
 
