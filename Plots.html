@@ -25,6 +25,7 @@
 	.coltt {
 		float: left;
 		width: 40%;
+        
 		padding: 5px;
 	  }
 	  
@@ -60,8 +61,8 @@
 							<ul>
 								<li><a href="#top" id="top-link"><span class="fa fa-chevron-right">Introduction</span></a></li>
 								<li><a href="LR.html" id="agent-link"><span class="icon fa fa-plane">Linear Regression</span></a></li>
-								<li><a href="#pilot" id="pilot-link"><span class="icon fa fa fa-plane">Median Model</span></a></li>
-								<li><a href="#compare" id="compare-link"><span class="icon fa fa-bookmark">XGBoost</span></a></li>
+								<li><a href="MED.html" id="pilot-link"><span class="icon fa fa fa-plane">Median Model</span></a></li>
+								<li><a href="XG.html" id="compare-link"><span class="icon fa fa-bookmark">XGBoost</span></a></li>
 							</ul>
 						</nav>
 				</div>
@@ -89,148 +90,17 @@
 					<h2 style="padding: 0px; margin: 0px;"><i class="fa fa-chevron-right"></i>   Introduction</h2>
 
 					<header>
-						This project was in the partnership of the University of Alberta (UofA) and Delphi Technology Corp (DTC), an innovative ﬂight training solution provider with offices in Winnipeg and Calgary. The ultimate goal of this research is to decrease the needed help from pilots during the training procedure of new pilots. This objective, once reached, will have a positive impact on the entire Canadian aviation industry. Research along this direction will also help in significantly lowering the cost of the pilot training program by reducing the number of additional flight instructors required to produce the required numbers of new pilots. Additionally, this technology can potentially be used in several related tutoring tasks. <br>
- 						The first phase of this project will focus on using ML to identify mistakes or sub-optimal maneuvers of trainee pilots inside a flight simulator <a href="https://www.x-plane.com/">(Xplane)</a>,to reduce human trainer supervision while improving student learning outcomes. To learn how to fly, trainees at DTC are currently guided through exercises in a flight simulator by a human flying instructor. We posit that training a predictive/RL-enabled system to take on some tasks is a viable approach to reduce the workload of an instructor and allow them to interact with more students simultaneously. 
-						 In the first step, an RL agent is trained with SAC (Soft Actor-Critic) algorithm to perform the most important task in flying an airplane, flying <a href="https://www.studyflight.com/straight-and-level-flight/">straight and level</a>. Pitch, yaw, and roll of the airplane are used to measure the success of the agent in performing this task. These variables are shown in the below figure.
-					</header>
-						<img src="/images/pitch.png" alt="Snow" width="350" height="300" class="center">
-					<header>
-						Defining a good reward function that can capture the essence of a task is crucial in training an RL agent that can properly perform that task. For flying straight and level, the pitch and roll of the airplane should be nearly zero and the yaw is defined based on the point towards which the airplane is flying. For our task, yaw is 180 degrees. The agent can receive a reward for being within a reasonable range (10 degrees) from these goal values. The reward increases as the agent gets closer to the exact desired values. Throughout the flight, the state of the agent is represented using the first letter of each measurement: P, Y, and R. If the agent is within range of the desired pitch (zero), but not within range of perfect Roll and yaw values, the agent’s state is represented as ‘P’. If the agent's state is ‘PRY’ it means that the agent is within range for all the measurements. A simplified version of the final reward function based on these values is mentioned below:
+					This is the firt set of interactive plots to look and compare the set of 3 simple Regression models implemented to predict Rental Index.
 					</header>
 
-
-					<strong style="font-size:1.5vw" >Reward Function</strong><br><br>
-
-					<table style="width:100%">
-						Reward = Yaw_reward + Pitch_reward + Roll_reward <br>
-					<tr>
-						<td>Yaw_reward</td>
-						<td>if 'Y'</td>
-						<td>1 - (yaw_error)<sup>0.4</sup>   </td>
-					</tr>
-					<tr>
-						<td>Pitch_reward</td>
-						<td>if 'YP'</td>
-						<td>1 - (pitch_error)<sup>0.4</sup></td>
-					</tr>
-					<tr>
-						<td>Roll_reward</td>
-						<td>if 'YPR'</td>
-						<td>1 - (roll_error)<sup>0.4</sup></td>
-					</tr>
-					
-					</table>
-					<header>
-					After training the agent, the performance of the agent is compared against the performance of a pilot. Some of the results from this comparison are mentioned in the <a href="#compare">Compare</a> section. After ensuring that the agent is performing comparably to a pilot, the agent can be used as a guideline for students during their trainings and showing them warnings, or calculating a score for them based on how similar to the trained agent they acted. It can also be used for prompting and teaching them the correct moves and decisions. This phase is still ongoing at DTC.
-					In the following sections, we demonstrate the state distribution, reward and a video for pilot and agent. In order to better show that our agent reaches comparable results with the pilot, the corresponding results for agent and pilot are shown side by side in the <a href="#compare">Compare</a> section.
-					</header>
-						<br><br>
 					</div>
 				</section>
 <!--  ------------------------------------------------------------------------------------------------------------ -->
-				<!-- Agent -->
-				<section id="agent" class="four" >
-					<div class="container" align="left">
-						<header class="major" style="border-bottom: solid #eeeeee 2px;">
-							<h2 style="padding: 0px; margin: 0px;"><i class="fa fa-plane"></i>   Agent</h2>
-						</header>
-							<div class="body" align="left">
-									<div class="text">
-									Since we had the recorded data from a flight performed by a pilot for 68 episodes, we looked into 68 episodes of a 
-								trained agent. The figure on the left shows the distibution of the agent's states over these 68 episodes. The right figure, shows the agent's episodic reward based on the reward function mentione in the 
-								<a href="#top">Introduction</a> section.
-									</div><br>
-									<div class="rrtt">
-										<div class="coltt"><img src="images/agent_states.png" alt="Snow" style="width:100%" style="height:98%"></div>
-										<div class="coltt"><img src="images/Agent_reward.JPEG" alt="Mountain" style="width:100%" style="height:100%"></div>
-									  </div><br>
 
-
-									  Below is a recorded video from the trained agent performing the straight and level task. The reward for each timestep is shown on the video in time. This reward is based on the same reward function used for training the agent and is calculated by reading the pitch, roll and heading of the airplane using OCR.<br>
-										<div class="video">
-											<iframe src="https://drive.google.com/file/d/1Pg8JR7gZaMK63bdkICaVuUsFPI21Ht_0/preview" width="640" height="480" allow="autoplay"></iframe>
-										</div><br>
-							</div>
-					</div>
-					</section>
 <!-- ------------------------------------------------------------------------------------------------------------- -->
-				<!-- Pilot -->
-					<section id="pilot" class="four" >
-					<div class="container" align="left">
-						<header class="major" style="border-bottom: solid #eeeeee 2px;">
-							<h2 style="padding: 0px; margin: 0px;"><i class="icon fa fa-plane"></i>  Pilot</h2>
-						</header>
-							<div class="body" align="left">
 
-									<div class="text">
-									A pilot was asked to perform fly straight and level for 68 episodes. The figure on the left shows the distibution of the airplane's states over these 68 episodes. The right figure, shows the pilot's episodic reward based on the reward function mentioned in the 
-									<a href="#top">Introduction</a> section.
-									</div><br>
-
-									<div class="rrtt">
-										<div class="coltt"><img src="images/pilot_states.png" alt="Snow" style="width:100%" style="height:100%"></div>
-										<div class="coltt"><img src="/images/Pilot_reward.JPEG" alt="Mountain" style="width:100%" style="height:100%"></div>
-									  </div><br>
-
-									  Below is a recorded video from the pilot performing the straight and level task.<br>
-										<!-- <div class="pull-right text-small">2013 - 2017</div> -->
-										<div class="video">
-											<iframe src="https://drive.google.com/file/d/1ARy6Ru_dP2bgUh8bLrJ5jyeW1mweyDFN/preview" width="640" height="480" allow="autoplay"></iframe>
-										</div><br>
-							</div>
-					</div>
-					</section>
   <!--------------- ------------------------- - - - ----------------------------------------->
-  				<!-- Compare -->
-				  <section id="compare" class="four" >
-					<div class="container" align="left">
-						<header class="major" style="border-bottom: solid #eeeeee 2px;">
-							<h2 style="padding: 0px; margin: 0px;"><i class="icon fa fa-bookmark"></i>  Comparison</h2>
-						</header>
-							<div class="body" align="left">
 
-								<div class="rrtt">
-									<div class="coltt"><img src="images/agent_states.png" alt="Snow" style="width:100%" style="height:100%"></div>
-									<div class="coltt"><img src="images/pilot_states.png" alt="Mountain" style="width:100%" style="height:100%"></div>
-								</div><br>
-
-								<div class="rrtt">
-									<div class="coltt"><img src="/images/compare1.png" alt="Snow" style="width:100%"></div>
-									<div class="coltt"><img src="/images/compare2.jpg" alt="Mountain" style="width:100%"></div>
-								</div><br>
-								<div class="text">
-								Since the agent is specifically trained based on the reward function while the pilot might include several other parameters in his/her dicision makings, the agent reaches a 
-								higher reward based on our reward function. This alone however cannot be an indication for better performance of the agent compared to pilot. Additionally, 
-								we were not aiming to perform better than the pilot, if possible. Our goal was to train an agent that takes similar decisions to the pilot in the same situtions. Therefore, the below 
-								figure can better show that our agent can guides students during training similar to a pilot. It shows that over the training time, the difference 
-								between the actions that the agent and pilot take in similar states decreases. 
-								</div>
-								<img src="/images/pilot_agent.png"  class="center"> <br>
-								<div class="text">
-									Comparing the agent's' performance with two student's we get the below figure. The actions that Student 2
-									takes are more different to agent's actions compared to student 1. This is a promising result since student 2 is on her first trial while student 1 is on her fifth.
-								</div>
-								<img src="/images/student_agent.png"  class="center"> <br>
-								  <div class="rrtt">
-									Below on the left is the pilot's recorder flight, and on the right, is the agent's recorded flight.
-									<div class="coltt">
-										<div class="video">
-											<iframe src="https://drive.google.com/file/d/1ARy6Ru_dP2bgUh8bLrJ5jyeW1mweyDFN/preview" width="640" height="480" allow="autoplay"></iframe>
-										</div>
-									</div>
-
-									<div class="coltt">
-										<div class="video">
-											<iframe src="https://drive.google.com/file/d/1Pg8JR7gZaMK63bdkICaVuUsFPI21Ht_0/preview" width="640" height="480" allow="autoplay"></iframe>
-										</div>
-									</div>
-
-										<!-- <iframe src="https://drive.google.com/file/d/1ARy6Ru_dP2bgUh8bLrJ5jyeW1mweyDFN/preview"  width="100%" allow="autoplay"></iframe> -->
-									<!-- <div class="coltt"><iframe src="https://drive.google.com/file/d/1Pg8JR7gZaMK63bdkICaVuUsFPI21Ht_0/preview"   allow="autoplay"></iframe></div> -->
-								  </div><br>
-							</div>
-					</div>
-					</section>
   <!--------------- ------------------------- - - - ----------------------------------------->
 
 <!-- ------------------------------------------------------------------------------------------------------------- -->
