@@ -55,12 +55,12 @@ var pJS = function(tag_id, params){
         }
       },
       size: {
-        value: 10,
+        value: 100,
         random: false,
         anim: {
           enable: false,
           speed: 20,
-          size_min: 0,
+          size_min: 1,
           sync: false
         }
       },
@@ -73,14 +73,14 @@ var pJS = function(tag_id, params){
       },
       move: {
         enable: true,
-        speed: 10,
+        speed: 20,
         direction: 'none',
         random: false,
         straight: false,
         out_mode: 'out',
         bounce: false,
         attract: {
-          enable: false,
+          enable: true,
           rotateX: 3000,
           rotateY: 3000
         }
