@@ -9,11 +9,13 @@ p {
 }
 
 a {
-  color: #69b3a2;
+  /* color: #69b3a2; */
+  color: #004AAD;
+
 }
 
 a:hover {
-  color: #251667;
+  color: #5188a4;
 }
 
 .text-primary {
@@ -92,8 +94,8 @@ u {
 
 .btn-primary {
   background-color: transparent;
-  border-color: #69b3a2;
-  color: #69b3a2;
+  border-color: #004AAD;
+  color: #004AAD;
   border-width: medium;
 }
 
