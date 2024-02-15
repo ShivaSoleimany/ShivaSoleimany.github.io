@@ -6,7 +6,9 @@ app = Flask(__name__)
 def process_selected_genres():
     data = request.get_json()
     selected_genres = data.get('selectedGenres', [])
+    print("Received selected genres:", selected_genres)  # Debugging print statement
     uppercase_genres = [genre.upper() for genre in selected_genres]
+    print("Uppercase genres:", uppercase_genres)  # Debugging print statement
     return jsonify(uppercase_genres)
 
 if __name__ == '__main__':
