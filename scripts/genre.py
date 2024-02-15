@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify
 
+print("hii")
 app = Flask(__name__)
 
 @app.route('/scripts/genre.py', methods=['POST'])
