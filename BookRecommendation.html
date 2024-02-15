@@ -26,7 +26,6 @@
   background-color: #f1f1f1;
 }
 </style>
-<script src="js/BookRecommendation_js/send_genre.js"></script> <!-- Link to the script.js file -->
 </head>
 <body>
 
@@ -41,34 +40,59 @@
 <p>Select the method for Book recommendation</p>
 <button type="button" class="collapsible">Recommend based on Genre</button>
 <div class="content">
-  <form id="genreForm" action="scripts/genre.py" method="post">
-    <input type="checkbox" name="genre" value="fiction"> Fiction<br>
-    <input type="checkbox" name="genre" value="non-fiction"> Non-Fiction<br>
-    <input type="checkbox" name="genre" value="mystery"> Mystery<br>
-    <input type="checkbox" name="genre" value="thriller"> Thriller<br>
-    <input type="checkbox" name="genre" value="science-fiction"> Science Fiction<br>
-    <input type="checkbox" name="genre" value="fantasy"> Fantasy<br>
-    <input type="submit" value="Send">
-    <input type="hidden" id="selectedGenresInput" name="selectedGenres">
-  </form>
-  <p id="selectedGenres"></p> <!-- Paragraph element for displaying selected genres -->
+  <input type="checkbox" name="genre" value="fiction"> Fiction<br>
+  <input type="checkbox" name="genre" value="non-fiction"> Non-Fiction<br>
+  <input type="checkbox" name="genre" value="mystery"> Mystery<br>
+  <input type="checkbox" name="genre" value="thriller"> Thriller<br>
+  <input type="checkbox" name="genre" value="science-fiction"> Science Fiction<br>
+  <input type="checkbox" name="genre" value="fantasy"> Fantasy<br>
 </div>
 <button type="button" class="collapsible">Recommend based on other books ratings</button>
 <div class="content">
-  <div class="content">
-    <input type="checkbox" name="genre" value="fiction"> Fiction<br>
-    <input type="checkbox" name="genre" value="non-fiction"> Non-Fiction<br>
-    <input type="checkbox" name="genre" value="mystery"> Mystery<br>
-    <input type="checkbox" name="genre" value="thriller"> Thriller<br>
-    <input type="checkbox" name="genre" value="science-fiction"> Science Fiction<br>
-    <input type="checkbox" name="genre" value="fantasy"> Fantasy<br>
-    <p id="selectedGenres"></p> <!-- Paragraph element for displaying selected genres -->
-  </div>
+  <!-- Add other content for this recommendation method -->
 </div>
 <button type="button" class="collapsible">Hybrid approach</button>
 <div class="content">
   <!-- Add other content for this recommendation method -->
 </div>
+
+<button id="sendButton">Send</button>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+document.getElementById("sendButton").addEventListener("click", function() {
+  var checkboxes = document.querySelectorAll('input[name="genre"]:checked');
+  var selectedGenres = [];
+  checkboxes.forEach(function(checkbox) {
+    selectedGenres.push(checkbox.value);
+  });
+  
+  var xhr = new XMLHttpRequest();
+  xhr.open("POST", "scripts/genre.py", true);
+  xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var uppercaseGenres = JSON.parse(xhr.responseText);
+      alert("Uppercase genres: " + uppercaseGenres.join(", "));
+    }
+  };
+  xhr.send(JSON.stringify({selectedGenres: selectedGenres}));
+});
+</script>
 
 </body>
 </html>
