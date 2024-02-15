@@ -41,13 +41,16 @@
 <p>Select the method for Book recommendation</p>
 <button type="button" class="collapsible">Recommend based on Genre</button>
 <div class="content">
-  <input type="checkbox" name="genre" value="fiction"> Fiction<br>
-  <input type="checkbox" name="genre" value="non-fiction"> Non-Fiction<br>
-  <input type="checkbox" name="genre" value="mystery"> Mystery<br>
-  <input type="checkbox" name="genre" value="thriller"> Thriller<br>
-  <input type="checkbox" name="genre" value="science-fiction"> Science Fiction<br>
-  <input type="checkbox" name="genre" value="fantasy"> Fantasy<br>
-  <button id="sendButton">Send</button>
+  <form id="genreForm" action="scripts/genre.py" method="post">
+    <input type="checkbox" name="genre" value="fiction"> Fiction<br>
+    <input type="checkbox" name="genre" value="non-fiction"> Non-Fiction<br>
+    <input type="checkbox" name="genre" value="mystery"> Mystery<br>
+    <input type="checkbox" name="genre" value="thriller"> Thriller<br>
+    <input type="checkbox" name="genre" value="science-fiction"> Science Fiction<br>
+    <input type="checkbox" name="genre" value="fantasy"> Fantasy<br>
+    <input type="submit" value="Send">
+    <input type="hidden" id="selectedGenresInput" name="selectedGenres">
+  </form>
   <p id="selectedGenres"></p> <!-- Paragraph element for displaying selected genres -->
 </div>
 <button type="button" class="collapsible">Recommend based on other books ratings</button>
@@ -58,8 +61,6 @@
 <div class="content">
   <!-- Add other content for this recommendation method -->
 </div>
-
-
 
 </body>
 </html>
