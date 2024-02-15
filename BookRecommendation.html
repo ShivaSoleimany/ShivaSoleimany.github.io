@@ -78,20 +78,21 @@ document.getElementById("sendButton").addEventListener("click", function() {
   var checkboxes = document.querySelectorAll('input[name="genre"]:checked');
   var selectedGenres = [];
   checkboxes.forEach(function(checkbox) {
-    selectedGenres.push(checkbox.value);
+      selectedGenres.push(checkbox.value);
   });
-  
+
   var xhr = new XMLHttpRequest();
   xhr.open("POST", "/Users/shiva/Desktop/Courses/website/shbaranbahar.github.io/scripts/genre.py", true);
   xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
   xhr.onreadystatechange = function() {
-    if (xhr.readyState === 4 && xhr.status === 200) {
-      var uppercaseGenres = JSON.parse(xhr.responseText);
-      alert("Uppercase genres: " + uppercaseGenres.join(", "));
-    }
+      if (xhr.readyState === 4 && xhr.status === 200) {
+          var uppercaseGenres = JSON.parse(xhr.responseText);
+          alert("Uppercase genres: " + uppercaseGenres.join(", "));
+      }
   };
   xhr.send(JSON.stringify({selectedGenres: selectedGenres}));
 });
+
 </script>
 
 </body>
